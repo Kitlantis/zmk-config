@@ -38,19 +38,19 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y            &kp U        &kp I        &kp O       &kp P
-&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H            &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp ENTER
-&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N            &kp M        &kp COMMA    &kp DOT     &kp SLASH
-&kp ESC                 &kp SEMI     &lt 1 SPACE  &lt 1 SPACE  &lt 2 BACKSPACE               &kp SQT                  &mo 2
+&kp Q       &kp W       &kp E        &kp R            &kp T   &kp Y        &kp U        &kp I        &kp O       &kp P
+&mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F      &kp G   &kp H        &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp ENTER
+&kp Z       &kp X       &kp C        &kp V            &kp B   &kp N        &kp M        &kp COMMA    &kp DOT     &kp SLASH
+&trans                  &kp SEMI     &lt 1 BACKSPACE  &trans  &lt 2 SPACE               &kp SQT                  &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &kp BSPC
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMI  &kp SQT  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &mo 2
-&trans           &trans  &trans  &trans  &trans          &trans             &trans
+&kp ESC         &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans            &trans             &kp DELETE
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans           &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&trans          &trans          &trans             &trans           &trans  &trans  &trans  &trans            &trans             &mo 2
+&trans                          &trans             &trans           &trans  &trans          &trans                               &trans
             >;
         };
 
