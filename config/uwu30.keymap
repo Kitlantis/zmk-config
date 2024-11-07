@@ -38,28 +38,28 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R            &kp T   &kp Y        &kp U        &kp I        &kp O       &kp P
-&mt TAB A   &mt LALT S  &mt LCTRL D  &mt LSHFT F      &kp G   &kp H        &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp ENTER
-&mt LGUI Z  &kp X       &kp C        &kp V            &kp B   &kp N        &kp M        &kp COMMA    &kp DOT     &kp SLASH
-&trans                  &kp SEMI     &lt 1 BACKSPACE  &trans  &lt 2 SPACE               &kp SQT                  &trans
+&kp Q   &kp W       &kp E        &kp R            &kp T   &kp Y        &kp U        &kp I        &kp O       &kp P
+&kp A   &mt LALT S  &mt LCTRL D  &mt LSHFT F      &kp G   &kp H        &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp ENTER
+&kp Z   &kp X       &kp C        &kp V            &kp B   &kp N        &kp M        &kp COMMA    &kp DOT     &kp SLASH
+&trans              &kp SEMI     &lt 1 BACKSPACE  &trans  &lt 2 SPACE               &kp SQT                  &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&kp ESC         &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans            &trans             &kp DELETE
+&kp ESC         &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans           &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans          &trans          &trans             &trans           &trans  &trans  &trans  &trans            &trans             &trans
-&trans                          &trans             &trans           &trans  &trans          &trans                               &trans
+&kp LEFT_GUI    &kp LEFT_SHIFT  &kp S              &trans           &trans  &trans  &trans  &trans            &trans             &trans
+&trans                          &kp DEL            &trans           &trans  &trans          &trans                               &trans
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp N1     &kp N2     &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp MINUS  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans                &trans  &trans  &trans  &trans          &trans          &trans
+&kp N1   &kp N2  &kp N3  &kp N4     &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&kp TAB  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans           &trans  &kp SPACE  &trans  &trans          &trans          &trans
             >;
         };
 
