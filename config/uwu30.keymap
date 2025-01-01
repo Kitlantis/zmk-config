@@ -33,6 +33,50 @@
 &mt { tapping-term-ms = <400>; };
 
 / {
+    macros {
+        Ctrl_C: Ctrl_C {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "CTRL_C";
+        };
+
+        Ctrl_Z: Ctrl_Z {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "CTRL_Z";
+        };
+
+        Ctrl_A: Ctrl_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
+            label = "CTRL_A";
+        };
+
+        Ctrl_X: Ctrl_X {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CTRL_X";
+        };
+
+        Screenshot: Screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(S))>;
+            label = "SCREENSHOT";
+        };
+
+        Ctrl_V: Ctrl_V {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "CTRL_V";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,19 +91,19 @@
 
         nav_layer {
             bindings = <
-&kp ESC         &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &trans           &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp LEFT_GUI    &kp LEFT_SHIFT  &kp S              &trans           &trans  &trans  &trans  &trans            &trans             &trans
-&trans                          &kp DEL            &trans           &trans  &trans          &trans                               &trans
+&kp ESC         &trans          &kp UP_ARROW      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
+&kp LEFT_ALT    &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT          &trans           &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &Ctrl_X         &Ctrl_C           &Ctrl_V            &Ctrl_A          &trans  &trans  &trans            &trans             &trans
+&trans                          &kp LEFT_CONTROL  &trans             &trans           &trans          &trans                               &trans
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp N1   &kp N2  &kp N3  &kp N4     &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp TAB  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans           &trans  &kp SPACE  &trans  &trans          &trans          &trans
+&kp N1       &kp N2  &kp N3       &kp N4     &kp N5  &kp N6  &kp N7  &kp N8      &kp N9  &kp N0
+&kp LA(TAB)  &trans  &trans       &trans     &trans  &trans  &trans  &trans      &trans  &trans
+&trans       &trans  &trans       &trans     &trans  &trans  &trans  &trans      &trans  &bootloader
+&trans               &Screenshot  &kp SPACE  &trans  &trans          &kp DELETE          &trans
             >;
         };
 
