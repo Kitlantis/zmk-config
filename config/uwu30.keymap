@@ -13,19 +13,19 @@
 
         combo_mo1 {
             timeout-ms = <100>;
-            key-positions = <7 8>;
+            key-positions = <34 9>;
             bindings = <&mo 1>;
         };
 
         combo_mo2 {
             timeout-ms = <100>;
-            key-positions = <17 18>;
+            key-positions = <19 34>;
             bindings = <&mo 2>;
         };
 
         Reset {
             bindings = <&bootloader>;
-            key-positions = <7 8 17 18>;
+            key-positions = <8 18 1 11>;
         };
 
         Tab {
@@ -36,6 +36,26 @@
         Caps_Lock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <10 11>;
+        };
+
+        Hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <6 7>;
+        };
+
+        Underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <7 8>;
+        };
+
+        Plus {
+            bindings = <&kp PLUS>;
+            key-positions = <8 17>;
+        };
+
+        Equals {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <8 18>;
         };
     };
 };
@@ -101,10 +121,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC         &trans          &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
-&kp LEFT_ALT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT          &trans           &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp LEFT_SHIFT  &Ctrl_X         &Ctrl_C         &Ctrl_V            &Ctrl_A          &trans  &trans  &trans            &trans             &trans
-&trans                          &trans          &trans             &trans           &trans          &trans                               &trans
+&kp ESC         &trans          &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
+&kp LEFT_ALT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT          &trans           &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &Ctrl_X         &Ctrl_C         &Ctrl_V            &Ctrl_A          &kp LC(T)  &trans  &trans            &trans             &trans
+&trans                          &trans          &trans             &trans           &trans             &trans                               &trans
             >;
         };
 
