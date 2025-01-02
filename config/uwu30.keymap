@@ -13,19 +13,29 @@
 
         combo_mo1 {
             timeout-ms = <100>;
-            key-positions = <1 2>;
+            key-positions = <7 8>;
             bindings = <&mo 1>;
         };
 
         combo_mo2 {
             timeout-ms = <100>;
-            key-positions = <28 29>;
+            key-positions = <17 18>;
             bindings = <&mo 2>;
         };
 
         Reset {
             bindings = <&bootloader>;
             key-positions = <7 8 17 18>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
+
+        Caps_Lock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <10 11>;
         };
     };
 };
@@ -82,10 +92,10 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W  &kp E                  &kp R            &kp T   &kp Y        &kp U  &kp I                    &kp O    &kp P
-&kp A   &kp S  &kp D                  &kp F            &kp G   &kp H        &kp J  &kp K                    &kp L    &kp ENTER
-&kp Z   &kp X  &kp C                  &kp V            &kp B   &kp N        &kp M  &kp COMMA                &kp DOT  &kp SLASH
-&trans         &mt LEFT_CONTROL SEMI  &lt 1 BACKSPACE  &trans  &lt 2 SPACE         &mt LEFT_ALT APOSTROPHE           &trans
+&kp Q             &kp W  &kp E                  &kp R            &kp T   &kp Y        &kp U  &kp I                    &kp O    &kp P
+&kp A             &kp S  &kp D                  &kp F            &kp G   &kp H        &kp J  &kp K                    &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X  &kp C                  &kp V            &kp B   &kp N        &kp M  &kp COMMA                &kp DOT  &kp SLASH
+&trans                   &mt LEFT_CONTROL SEMI  &lt 1 BACKSPACE  &trans  &lt 2 SPACE         &mt LEFT_ALT APOSTROPHE           &trans
             >;
         };
 
