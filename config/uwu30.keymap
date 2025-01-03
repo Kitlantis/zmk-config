@@ -121,10 +121,10 @@
 
         nav_layer {
             bindings = <
-&kp ESC         &trans          &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans  &kp MINUS         &kp EQUAL          &kp BACKSPACE
-&kp LEFT_ALT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT          &trans           &trans     &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp LEFT_SHIFT  &Ctrl_X         &Ctrl_C         &Ctrl_V            &Ctrl_A          &kp LC(T)  &trans  &trans            &trans             &trans
-&trans                          &trans          &trans             &trans           &trans             &trans                               &trans
+&kp ESC         &trans          &kp UP_ARROW    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans     &kp MINUS         &kp EQUAL          &kp BACKSPACE
+&kp LEFT_ALT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT          &trans           &trans     &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LEFT_SHIFT  &Ctrl_X         &Ctrl_C         &Ctrl_V            &Ctrl_A          &kp LC(T)  &kp LC(Z)  &trans            &trans             &trans
+&trans                          &trans          &trans             &trans           &trans                &trans                               &trans
             >;
         };
 
