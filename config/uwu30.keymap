@@ -54,7 +54,7 @@
         };
 
         Equals {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <8 18>;
         };
     };
