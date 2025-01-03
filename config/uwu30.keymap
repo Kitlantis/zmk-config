@@ -57,6 +57,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <8 18>;
         };
+
+        L_Parentheses {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <17 27>;
+        };
+
+        R_Parentheses {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <18 28>;
+        };
     };
 };
 
